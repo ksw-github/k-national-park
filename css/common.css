@@ -93,8 +93,18 @@ header .headerMenu nav .depth01 .depth02 {
   position: absolute;
   left: 0;
   right: 0;
-
 }
+header .headerMenu nav .depth01 .depth02 .inner {
+  display: flex;
+}
+header .headerMenu nav .depth01 .depth02 figure {
+  width: 150px;
+  background-color: antiquewhite;
+}
+header .headerMenu nav .depth01 .depth02 ul {
+  width: 100%;
+}
+header .headerMenu nav .depth01 .depth02 figcaption {}
 header .headerMenu nav .depth01 .depth02 li {
   /* max-width: 1000px;
   margin: 0 auto; */
