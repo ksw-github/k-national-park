@@ -161,6 +161,8 @@ main section {
 } 
 
 /* mainIcoWrap 메인아이콘메뉴 */
+.mainIcoWrap {
+}
 .mainIcoWrap .icoList {
   display: flex;
   justify-content: center;
@@ -280,13 +282,13 @@ main section {
 /* 탐방통제정보 */
 .controlWrap {
   background-color: #EDF5FF;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 .controlWrap h2 {
-  font-size: 18px;
+  font-size: 1.7rem;
 }
 .controlWrap p {
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 30px;
 }
@@ -382,12 +384,11 @@ main section {
 /* 공지 */
 .notice {
   display: flex;
-  gap: 20px;
   justify-content: space-between;
   padding: 50px 0;
 }
 .notice .left {
-  width: 50%;
+  width: 590px;
 }
 .notice .left .noticeTap {
   display: flex;
@@ -468,7 +469,7 @@ main section {
 }
 /* 뉴스 */
 .notice .right {
-  width: 50%;
+  width: 590px;
 }
 .notice .right .newsTap {
   position: relative;
