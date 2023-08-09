@@ -111,31 +111,29 @@ header .headerMenu nav .depth01 > li > a {
 }
 /* depth02 */
 header .headerMenu nav .depth01 .depth02 {
-  /* display: none; */
+  display: none;
   background-color: #fff;
   position: absolute;
   left: 0;
   right: 0;
 }
-header .headerMenu nav .depth01 .depth02 .inner {
-  display: flex;
-}
-header .headerMenu nav .depth01 .depth02 figure {
-  width: 150px;
+header .headerMenu nav .depth01 .depth02 .inner {}
+header .headerMenu nav .depth01 .depth02 .inner figure {
+  width: 300px;
   background-color: antiquewhite;
 }
-header .headerMenu nav .depth01 .depth02 ul {
+header .headerMenu nav .depth01 .depth02 .inner figcaption {}
+header .headerMenu nav .depth01 .depth02 .inner > ul {
   width: 100%;
 }
-header .headerMenu nav .depth01 .depth02 figcaption {}
-header .headerMenu nav .depth01 .depth02 ul li {
-  z-index: 10;
+header .headerMenu nav .depth01 .depth02 .inner > ul  > li {
+  /* z-index: 10; */
   /* border: 1px solid blue; */
   width: 100%;
   display: flex;
 }
-header .headerMenu nav .depth01 .depth02 ul li > a {
-  width: 150px;
+header .headerMenu nav .depth01 .depth02 .inner > ul > li > a {
+  width: 200px;
   display: block;
   /* vertical-align: top; */
   background-color: #EDF5FF;
@@ -148,10 +146,11 @@ header .headerMenu nav .depth01 > li:hover .depth02 {
 
 /* depth03 */
 header .headerMenu nav .depth01 .depth02 .depth03 {
+  width: 100%;
+  display: inline-block;
   /* border: 1px solid red; */
   color: #94BEEE;
-  display: inline-block;
-  width: 100%;
+  border-bottom: 1px solid #eee;
   font-size: 0;
 }
 header .headerMenu nav .depth01 .depth02 .depth03 > li {

@@ -6,6 +6,13 @@
     max-width: 1200px;
     padding: 0 20px;
   }
+  header .headerMenu nav .depth01 .depth02 .inner figure {
+    display: none;
+  }
+  header .headerMenu nav .depth01 .depth02 .depth03 > li {
+    display: inline-block;
+    width: 33.333%;
+  }
   header .headerMenu .logo {
     position: fixed;
     left: 20px;
