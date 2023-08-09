@@ -1,0 +1,1001 @@
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalam:wght@300;400;700&family=Monoton&family=Nanum+Gothic:wght@400;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* 폰트어썸 최신 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+@import url(common.css);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  color: inherit;
+}
+button {
+  border: transparent;
+  background: transparent;
+}
+input {
+  border: transparent;
+}
+select {
+  border: transparent;
+}
+main section {
+  min-width: 1200px;
+}
+
+/* 모달창 */
+.modal.on {
+  display: block;
+}
+.modal {
+  position: fixed;
+  top: 150px;
+  left: 100px;
+  z-index: 999999;
+  display: none;
+}
+.modal .mainModal {}
+.modal .mainModal .modalbody {
+  width: 390px;
+  height: 260px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #94BEEE;
+  font-size: 1rem;
+}
+.modal .mainModal .modalbody p {
+  margin: 10px 0 30px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.modal .mainModal .modalbody div {
+  line-height: 20px;
+}
+.modal .mainModal .modalbody a {
+  display: inline-block;
+  color: #6BA0DD;
+}
+.modal .mainModal .modalbody a.pptLink {
+  margin: 30px 0;
+}
+.modal .mainModal .modalfooter {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #94BEEE;
+}
+.modal .mainModal .modalfooter .checkWeek {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.modal .mainModal .modalfooter .checkWeek label  {
+  cursor: pointer;
+}
+.modal .mainModal .modalfooter .checkWeek input#chk  {
+  cursor: pointer;
+}
+.modal .mainModal .modalfooter .close {
+  cursor: pointer;
+}
+
+/* main visual */
+.visualWrap {
+  margin-top: 181px;
+  position: relative;
+}
+.visualWrap .visualSlider {
+}
+.visualWrap .visualSlider img {
+  height: 310px;
+  width: 100%;
+}
+
+.visualWrap .visualTit {
+  position: relative;
+  left: 0;
+  top: 150px;
+  margin-top: -100px;
+  font-size: 25px;
+  color: #fff;
+  z-index: 1;
+}
+.visualWrap .visualTit span {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.visualWrap .visualTit strong {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.visualWrap .visualTit p {
+  font-size: 0.5em;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+}
+
+/* 메인비주얼 컨트롤러 */
+.visualWrap .controls {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+/* 닷 */
+.visualWrap .controls .dots .customDots {
+  display: flex;
+}
+.visualWrap .controls .dots .customDots button {
+  display: none;
+}
+.visualWrap .controls .dots .customDots li {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255,.7);
+  border-radius: 50%;
+  margin: 7px;
+  cursor: pointer;
+}
+.visualWrap .controls .dots .customDots li.slick-active {
+  background: transparent;
+  border: #fff solid 2px;
+  box-sizing: border-box;
+}
+/* 방향키 */
+.visualWrap .controls .arrows {
+  display: flex;
+}
+.visualWrap .controls .arrows button {
+  font-size: 15px;
+  line-height: 30px;
+  background: transparent;
+  margin: 0 5px;
+  cursor: pointer;
+  font-family: fontawesome,sans-serif;
+  color: #fff;
+}
+.visualWrap .controls .arrows .prevBtn::after {
+  content: "\f053";
+}
+.visualWrap .controls .arrows .nextBtn::after {
+  content: "\f054";
+}
+/* 재생/정지 */
+.visualWrap .controls .btn button {
+  display: none;
+}
+.visualWrap .controls .btn button.active {
+  display: block;
+}
+.visualWrap .controls .btn .pauseBtn::after {
+  content: '\f04c';
+}
+.visualWrap .controls .btn .playBtn::after {
+  content: '\f04b';
+} 
+
+/* mainIcoWrap 메인아이콘메뉴 */
+.mainIcoWrap .icoList {
+  display: flex;
+  justify-content: center;
+}
+.mainIcoWrap .icoList li {
+  width: 140px;
+  text-align: center;
+  margin: 20px 20px;
+}
+.mainIcoWrap .icoList li:hover {
+  color: #6BA0DD;
+}
+.mainIcoWrap .icoList li:hover img {
+  transform: translateY(-10%);
+  transition: 0.2s;
+}
+.mainIcoWrap .icoList li a span {
+  display: block;
+  padding-top: 20px;
+}
+
+/* mainBnrSearch 검색섹션 */
+.mainBnrSearch {
+  background-color: #EDF5FF;
+  padding: 40px 0;
+}
+.mainBnrSearch .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.mainBnrSearch .searchWrap .searchBox {
+  width: 440px;
+  position: relative;
+  background: #fff;
+  border: 2px solid #B7D6FA;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.mainBnrSearch .searchWrap .searchBox input#search {
+  width: 85%;
+  height: 60px;
+  outline: none;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.mainBnrSearch .searchWrap .searchBox input#search:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+.mainBnrSearch .searchWrap .searchBox input.searchIco {
+  width: 50px;
+  height: 50px;
+  background: #fff url(../img/magnifying-glass-solid.svg)no-repeat center / 30px 30px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.mainBnrSearch .searchWrap .papular {
+  display: flex;
+  padding: 20px 0;
+}
+.mainBnrSearch .searchWrap .papular span {
+  font-size: 18px;
+  color: #406DA1;
+  margin-right: 15px;
+}
+.mainBnrSearch .searchWrap .papular ul {
+  display: flex;
+  gap: 15px;
+}
+.mainBnrSearch .searchWrap .papular ul li a {
+  font-size: 14px;
+}
+.mainBnrSearch .searchWrap .papular ul li:hover {
+  text-decoration: underline;
+}
+/* 오른쪽슬라이드 */
+.mainBnrSearch .rightBnr {
+  width: 350px;
+  position: relative;
+}
+.mainBnrSearch .rightBnr .arrows {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  line-height: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  padding: 0 10px;
+}
+.mainBnrSearch .rightBnr .arrows button {
+  font-size: 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-family: fontawesome, sans-serif;
+  position: absolute;
+  right: 3px;
+}
+.mainBnrSearch .rightBnr .arrows .prevBtn::after {
+  content: '\f106';
+}
+.mainBnrSearch .rightBnr .arrows .nextBtn::after {
+  content: '\f107';
+}
+.mainBnrSearch .rightBnr .arrows .prevBtn {
+  top: 0;
+}
+.mainBnrSearch .rightBnr .arrows .nextBtn {
+  bottom: 0;
+}
+
+/* 탐방통제정보 */
+.controlWrap {
+  background-color: #EDF5FF;
+  padding-bottom: 40px;
+}
+.controlWrap h2 {
+  font-size: 18px;
+}
+.controlWrap p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.controlWrap p a {
+  color: #406DA1;
+}
+.controlWrap p a:hover {
+  font-weight: bold;
+}
+.controlWrap .cardWrap {
+  position: relative;
+}
+.controlWrap .cardWrap button {
+  width: 35px;
+  height: 35px;
+  font-size: 17px;
+  cursor: pointer;
+  background: #B7D6FA;
+  border-radius: 50%;
+  position: absolute;
+  top: -45px;
+  right: 0;
+  font-family: fontawesome, sans-serif;
+  color: #fff;
+}
+.controlWrap .cardWrap button:hover {
+  background-color: #94BEEE;
+}
+.controlWrap .cardWrap button.prevBtn {
+  right: 50px;
+}
+.controlWrap .cardWrap button.prevBtn::after {
+  content: "\f053";
+}
+.controlWrap .cardWrap button.nextBtn::after {
+  content: "\f054";
+}
+.controlWrap .cardWrap .cardList {
+  margin: 0 -20px;
+  overflow: hidden;
+}
+.controlWrap .cardWrap .cardList .card {
+}
+.controlWrap .cardWrap .cardList .card a {
+  width: 165px;
+  height: 182px;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #94BEEE;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  margin: 20px;
+  padding: 20px 0;
+}
+.controlWrap .cardWrap .cardList .card a:hover {
+  border-color: #406DA1;
+}
+.controlWrap .cardWrap .cardList .card dl dt {
+  font-size: 18px;
+}
+.controlWrap .cardWrap .cardList .card dl dd.date {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.controlWrap .cardWrap .cardList .card dl dd.ctrl > span {
+  font-size: 16px;
+  font-weight: 500;
+  background: #6BA0DD;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 90px;
+}
+.controlWrap .cardWrap .cardList .card dl dd.ctrlBtm > span {
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #94BEEE;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 2px 30px;
+}
+.controlWrap .cardWrap .cardList .card dl .ctrl .gold {
+  background-color: orange;
+}
+.controlWrap .cardWrap .cardList .card dl .ctrl .red {
+  background-color: red;
+}
+
+/* 공지 */
+.notice {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.notice .left {
+  width: 50%;
+}
+.notice .left .noticeTap {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #EDF5FF;
+  border-radius: 10px;
+}
+.notice .customDots {
+  display: flex;
+}
+.notice .left .noticeTap button {
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.notice .noticeTap button.active,
+.notice .newsTap button.active {
+  background-color: #406DA1;
+  color: #fff;
+  font-weight: bold;
+}
+.notice .noticeTap button:hover,
+.notice .newsTap button:hover {
+  /* background-color: #406DA1;
+  color: #fff; */
+  font-weight: bold;
+}
+.notice .left .noticeTap .more::after {
+  content: '\2b';
+  font-family: fontawesome,sans-serif;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.notice .left .noticeList {}
+.notice .left .noticeList ul {}
+.notice .left .noticeList ul li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-weight: 500;
+}
+.notice .left .noticeList ul li a {
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.notice .left .noticeList ul a:hover {
+  text-decoration: underline;
+}
+.notice .left .noticeList ul li::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.notice .left .noticeList ul li span {
+  line-height: 30px;
+  font-weight: 400;
+}
+/* 뉴스 */
+.notice .right {
+  width: 50%;
+}
+.notice .right .newsTap {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #EDF5FF;
+  border-radius: 10px;
+}
+.notice .right .newsTap button {
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.notice .right .newsTap .more::after {
+  content: '\2b';
+  font-family: fontawesome, sans-serif;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.notice .right .newsList {}
+.notice .right .newsList ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.notice .right .newsList ul li {
+  width: 290px;
+}
+.notice .right .newsList ul li:hover strong {
+  text-decoration: underline;
+}
+.notice .right .newsList ul li:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.notice .right .newsList ul li a {}
+.notice .right .newsList ul li a strong {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 28px;
+}
+.notice .right .newsList ul li a p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.notice .right .newsList ul li a span {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.notice .right .newsList ul li a .img {
+  width: 290px;
+  height: 183px;
+  overflow: hidden;
+}
+.notice .right .newsList ul li a .img img {
+  width: 100%;
+}
+
+
+/* 메인지도 */
+.mapWrap {
+  background-color: #EDF5FF;
+  padding: 40px 0;
+}
+.mapWrap .txtDots {
+  display: flex;
+  justify-content: center;
+}
+.mapWrap .txtDots .customDots {
+  width: 50%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.mapWrap .txtDots .customDots li {
+  font-size: 1.7rem;
+  padding: 10px;
+  cursor: pointer;
+}
+.mapWrap .txtDots .customDots li::before {
+  content: '#';
+}
+.mapWrap .txtDots .customDots li.slick-active {
+  background-color: #406DA1;
+  border-radius: 30px;
+  color: #fff;
+}
+.mapWrap .mapBtn {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  position: relative;
+}
+.mapWrap .mapBtn::after {
+  content: '';
+  width: 549px;
+  border-bottom: #406DA1 1px dashed;
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(50% - 0.5px);
+  left: 0;
+}
+.mapWrap .mapBtn::before {
+  content: '';
+  width: 549px;
+  border-bottom: #406DA1 1px dashed;
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(50% - 0.5px);
+  right: 0;
+}
+.mapWrap .mapBtn button {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  font-family: 'fontawesome';
+  color: #406DA1;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.mapWrap .mapBtn .prevBtn::after {
+  content: '\f053';
+}
+.mapWrap .mapBtn .nextBtn::after {
+  content: '\f054';
+}
+/* 왼쪽 텍스트인포 */
+.mapWrap .mapSliderWrap {
+  height: 350px;
+  display: flex;
+  cursor: pointer;
+}
+.mapWrap .mapSliderWrap .txtList {
+  width: 50%;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo {
+  width: 70%;
+  padding: 50px;
+  position: absolute;
+  opacity: 0;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo.active {
+  opacity: 1;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo .img {
+  width: 150px;
+  position: absolute;
+  top: 15px;
+  right: -70px;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo .img img {
+  width: 100%;
+}
+/* .mapWrap .mapSliderWrap .txtList .txtInfo .img .dot::after {
+  content: '\f3c5';
+  width: 10px;
+  height: 10px;
+  font-family: 'fontawesome', sans-serif;
+  font-size: 1.5rem;
+  color: #406DA1;
+  position: absolute;
+  bottom: 0;
+} */
+.mapWrap .mapSliderWrap .txtList .txtInfo h2 {
+  font-size: 1.7rem;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo .hr {
+  width: 100%;
+  height: 1px;
+  background-color: #94BEEE;
+  margin: 40px 0;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo p {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo span::before {
+  content: '\f3c5';
+  font-family: 'fontawesome', sans-serif;
+  color: #406DA1;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo :is(h2, .hr, p, span) {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo img {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 1s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo.active img {
+  transform: translateX(0);
+  opacity: 1;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo.active :is(h2, .hr, p, span) {
+  transform: translateX(0);
+  opacity: 1;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo.active h2 {
+  transition-delay: 0.1s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo.active .hr {
+  transition-delay: 0.2s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo.active p {
+  transition-delay: 0.3s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo.active span {
+  transition-delay: 0.4s;
+}
+/* .mapWrap .mapSliderWrap .txtList .txtInfo h2 {
+  transition-delay: 0.2s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo .hr {
+  transition-delay: 0.3s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo p {
+  transition-delay: 0.4s;
+}
+.mapWrap .mapSliderWrap .txtList .txtInfo span {
+  transition-delay: 0.5s;
+} */
+/* 산이미지 슬라이더 */
+.mapWrap .mapSliderWrap .mapSlider {
+  width: 50%;
+  overflow: hidden;
+}
+.mapWrap .mapSliderWrap .mapSlider .img {
+}
+.mapWrap .mapSliderWrap .mapSlider .img img {
+  width: 100%;
+}
+
+
+/* sns섹션 */
+.snsWrap {
+  display: flex;
+  padding: 80px 0;
+}
+.snsWrap .left {
+  width: 50%;
+  padding: 50px 0;
+}
+.snsWrap .left h2 {
+  font-size: 1.7rem;
+}
+.snsWrap .left h2 span {
+  color: #6BA0DD;
+}
+.snsWrap .left p{
+  font-size: 1rem;
+  margin: 10px 0 25px;
+}
+.snsWrap .left a.link {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #406DA1;
+  padding: 10px;
+  border: 1px solid #6BA0DD;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+.snsWrap .left a.link::after {
+  content: '\f061';
+  font-family: 'fontawesome',sans-serif;
+  padding-left: 10px;
+}
+.snsWrap .left a.link:hover {
+  border-color: #406DA1;
+}
+.snsWrap .left .ctrl {
+  display: flex;
+  align-items: center;
+}
+.snsWrap .left .ctrl .progressBar {
+  width: 400px;
+  height: 5px;
+  background-color: #B7D6FA;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 30px;
+}
+.snsWrap .left .ctrl .progress{
+  height: 5px;
+  background-color: #406DA1;
+  border-radius: 10px;
+  position: absolute;
+  transition: 0.3s;
+}
+.snsWrap .left .ctrl .arrows {}
+.snsWrap .left .ctrl .arrows button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #B7D6FA;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'fontawesome',sans-serif;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+.snsWrap .left .ctrl .arrows button:hover {
+  background-color: #94BEEE;
+}
+.snsWrap .left .ctrl .arrows .prevBtn::after {
+  content: "\f053";
+}
+.snsWrap .left .ctrl .arrows .nextBtn::after {
+  content: "\f054";
+}
+
+.snsWrap .right {
+  width: 50%;
+}
+.snsWrap .right .snsSlider {
+}
+.snsWrap .right .snsSlider .card {
+  width: 182px;
+  height: 255px;
+  border: 1px solid #94BEEE;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.snsWrap .right .snsSlider .card .ico {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.snsWrap .right .snsSlider .card .ico img {
+  width: 100%;
+}
+.snsWrap .right .snsSlider .card .more {
+  float: right;
+}
+.snsWrap .right .snsSlider .card .more::after {
+  content: '\2b';
+  font-family: fontawesome,sans-serif;
+  display: block;
+  color: #94BEEE;
+  font-size: 0.8rem;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #B7D6FA;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.snsWrap .right .snsSlider .card strong,
+.snsWrap .right .snsSlider .card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.snsWrap .right .snsSlider .card strong {
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+.snsWrap .right .snsSlider .card p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.snsWrap .right .snsSlider .card span {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.snsWrap .right .snsSlider .card .img {
+  margin-top: 10px;
+}
+.snsWrap .right .snsSlider .card .img img {
+  width: 100%;
+  object-fit: cover;
+}
+.snsWrap .right .arrows {}
+.snsWrap .right .arrows .prevBtn {}
+.snsWrap .right .arrows .nextBtn {}
+
+/* 배너섹션 */
+.banner {
+  height: 500px;
+}
+.banner .img {
+  height: 300px;
+  background: url(../img/bannerBig.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+.banner .img img {
+  display: inline-block;
+  justify-content: center;
+}
+.backImg {
+  text-align: center;
+  height: 98px;
+}
+.backImg div {
+  background: url(../img/back.png) no-repeat center;
+  height: 100%;
+}
+
+/* 플루팅퀵메뉴 사이드 */
+.floatingMenu.on {
+ display: block;
+}
+.floatingMenu {
+  display: none;
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  z-index: 9999;
+}
+.floatingMenu ul {}
+.floatingMenu ul li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #B7D6FA;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.floatingMenu ul li a::after {
+  content: '\f062';
+  font-family: fontawesome,sans-serif;
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+}
+.floatingMenu ul li a:hover {
+  background-color: #94BEEE;
+}
+
+/* 반응형 */
+@media (max-width:921px) {
+  .floatingMenu {
+    display: none;
+  }
+  .mainBnrSearch {
+    border: 1px solid black;
+  }
+  .mainBnrSearch .searchWrap {
+    border: 1px solid black;
+    /* display: none; */
+  }
+  .rightBnr {
+    float: left;
+  }
+}
+
+@media (max-width:455px) {
+  
+}
