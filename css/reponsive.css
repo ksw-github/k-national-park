@@ -1,4 +1,5 @@
 /* 반응형 */
+/* pc */
 @media (max-width: 1250px) {
   .inner {
     width: auto;
@@ -16,6 +17,7 @@
     width: 125px;
   }
 }
+/* 태블릿 */
 @media (max-width:990px) {
   header .headerMenu nav  {
     display: none;
@@ -24,15 +26,20 @@
     margin-left: auto;
   }
   header .headerMenu .logo {
-    position: relative;
+    position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
   }
   header .headerMenu .logo h1 a {
     height: 40px;
     width: 180px;
   }
-
+  header .siteMap {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
 
   .floatingMenu {
     display: none;
@@ -48,7 +55,10 @@
     float: left;
   }
 }
-  
-@media (max-width:455px) {
-  
+
+/* 모바일 */
+@media (max-width:500px) {
+  header .headerUtil {
+    display: none;
+  }
 }

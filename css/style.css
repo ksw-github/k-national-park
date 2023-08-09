@@ -5,29 +5,6 @@
 
 @import url(common.css);
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  color: #333;
-}
-.inner {
-  width: 1200px;
-  margin: 0 auto;
-}
-a {
-  color: inherit;
-}
-button {
-  border: transparent;
-  background: transparent;
-}
-input {
-  border: transparent;
-}
-select {
-  border: transparent;
-}
 main section {
   min-width: 1200px;
 }
@@ -93,10 +70,9 @@ main section {
   margin-top: 181px;
   position: relative;
 }
-.visualWrap .visualSlider {
-}
+.visualWrap .visualSlider {}
 .visualWrap .visualSlider img {
-  height: 310px;
+  /* height: 310px; */
   width: 100%;
 }
 

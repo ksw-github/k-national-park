@@ -3,6 +3,30 @@
 /* 폰트어썸 최신 */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  color: inherit;
+}
+button {
+  border: transparent;
+  background: transparent;
+}
+input {
+  border: transparent;
+}
+select {
+  border: transparent;
+}
+
 /* header top*/
 header {
   position: fixed;
@@ -13,7 +37,6 @@ header {
   background-color: #fff;
 }
 header .headerUtil {
-  display: flow-root;
   background: #EDF5FF;
   height: 35px;
   transition: 0.1s;
@@ -23,8 +46,8 @@ header .headerUtil.active {
   transition: 0.1s;
 }
 header .headerUtil ul {
-  float: right;
   display: flex;
+  justify-content: right;
 }
 header .headerUtil ul li {
   margin: 10px;
@@ -88,7 +111,7 @@ header .headerMenu nav .depth01 > li > a {
 }
 /* depth02 */
 header .headerMenu nav .depth01 .depth02 {
-  display: none;
+  /* display: none; */
   background-color: #fff;
   position: absolute;
   left: 0;
@@ -105,60 +128,43 @@ header .headerMenu nav .depth01 .depth02 ul {
   width: 100%;
 }
 header .headerMenu nav .depth01 .depth02 figcaption {}
-header .headerMenu nav .depth01 .depth02 li {
-  /* max-width: 1000px;
-  margin: 0 auto; */
+header .headerMenu nav .depth01 .depth02 ul li {
   z-index: 10;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 100%;
   display: flex;
-
 }
-header .headerMenu nav .depth01 .depth02 li > a {
+header .headerMenu nav .depth01 .depth02 ul li > a {
   width: 150px;
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  /* vertical-align: top; */
   background-color: #EDF5FF;
-  border-radius: 10px;
   color: #333;
+  padding: 5px 0;
 }
 header .headerMenu nav .depth01 > li:hover .depth02 {
   display: block;
-  /* background: url(../img/subMenu1.png) no-repeat; */
-  /* background-size: 300px; */
-  /* background-color: #fff; */
 }
-header .headerMenu nav .depth01 > li div {
-  /* display: none; */
-}
-header .headerMenu nav .depth01 > li:hover > div {
-  /* display: block; */
-}
-header .headerMenu nav .depth01 > li figure {
-  /* display: inline-block; */
-}
-
 
 /* depth03 */
 header .headerMenu nav .depth01 .depth02 .depth03 {
-  /* width: 800px; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: #94BEEE;
   display: inline-block;
   width: 100%;
   font-size: 0;
 }
 header .headerMenu nav .depth01 .depth02 .depth03 > li {
-  font-size: 1rem;
-  border: 1px solid green;
   display: inline-block;
   width: 25%;
-  box-sizing: border-box;
+  font-size: 1rem;
+  /* border: 1px solid green; */
 }
 header .headerMenu nav .depth01 .depth02 .depth03 > li > a{
   color: gray;
   display: block;
   width: 100%;
+  padding: 5px 0;
 }
 
 header .headerMenu .logo {
@@ -171,8 +177,10 @@ header .headerMenu .logo h1 a {
   background: url(../img/h_logo.png)no-repeat center/100%;
 }
 header .siteMap a {
-  float: right;
-  line-height: 85px;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   white-space: nowrap;
 }
 header .siteMap a::before {
