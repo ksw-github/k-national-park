@@ -1,0 +1,54 @@
+/* 반응형 */
+@media (max-width: 1250px) {
+  .inner {
+    width: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  header .headerMenu .logo {
+    position: fixed;
+    left: 20px;
+    top: 0;
+    padding: 0;
+  }
+  header .headerMenu .logo h1 a {
+    height: 35px;
+    width: 125px;
+  }
+}
+@media (max-width:990px) {
+  header .headerMenu nav  {
+    display: none;
+  };
+  header .siteMap {
+    margin-left: auto;
+  }
+  header .headerMenu .logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .headerMenu .logo h1 a {
+    height: 40px;
+    width: 180px;
+  }
+
+
+  .floatingMenu {
+    display: none;
+  }
+  .mainBnrSearch {
+    border: 1px solid black;
+  }
+  .mainBnrSearch .searchWrap {
+    border: 1px solid black;
+    /* display: none; */
+  }
+  .rightBnr {
+    float: left;
+  }
+}
+  
+@media (max-width:455px) {
+  
+}

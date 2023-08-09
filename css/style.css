@@ -979,23 +979,3 @@ main section {
   background-color: #94BEEE;
 }
 
-/* 반응형 */
-@media (max-width:921px) {
-  .floatingMenu {
-    display: none;
-  }
-  .mainBnrSearch {
-    border: 1px solid black;
-  }
-  .mainBnrSearch .searchWrap {
-    border: 1px solid black;
-    /* display: none; */
-  }
-  .rightBnr {
-    float: left;
-  }
-}
-
-@media (max-width:455px) {
-  
-}

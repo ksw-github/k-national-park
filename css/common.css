@@ -93,22 +93,23 @@ header .headerMenu nav .depth01 .depth02 {
   position: absolute;
   left: 0;
   right: 0;
-  border: 1px solid black;
+
 }
-header .headerMenu nav .depth01 .depth02 > li {
+header .headerMenu nav .depth01 .depth02 li {
   /* max-width: 1000px;
   margin: 0 auto; */
   z-index: 10;
   border: 1px solid blue;
-  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+
 }
-header .headerMenu nav .depth01 .depth02 > li > a {
+header .headerMenu nav .depth01 .depth02 li > a {
   width: 150px;
   display: inline-block;
   vertical-align: top;
   background-color: #EDF5FF;
   border-radius: 10px;
-  margin-left: 200px;
   color: #333;
 }
 header .headerMenu nav .depth01 > li:hover .depth02 {
@@ -117,26 +118,40 @@ header .headerMenu nav .depth01 > li:hover .depth02 {
   /* background-size: 300px; */
   /* background-color: #fff; */
 }
+header .headerMenu nav .depth01 > li div {
+  /* display: none; */
+}
+header .headerMenu nav .depth01 > li:hover > div {
+  /* display: block; */
+}
+header .headerMenu nav .depth01 > li figure {
+  /* display: inline-block; */
+}
+
+
 /* depth03 */
 header .headerMenu nav .depth01 .depth02 .depth03 {
-  width: 800px;
+  /* width: 800px; */
   border: 1px solid red;
   color: #94BEEE;
   display: inline-block;
-  position: fixed;
+  width: 100%;
+  font-size: 0;
 }
 header .headerMenu nav .depth01 .depth02 .depth03 > li {
+  font-size: 1rem;
   border: 1px solid green;
   display: inline-block;
-  width: 180px;
-  margin-bottom: 10px;
+  width: 25%;
+  box-sizing: border-box;
 }
 header .headerMenu nav .depth01 .depth02 .depth03 > li > a{
   color: gray;
+  display: block;
+  width: 100%;
 }
 
 header .headerMenu .logo {
-  float: left;
   padding: 20px 0;
 }
 header .headerMenu .logo h1 a {
