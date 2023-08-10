@@ -94,7 +94,7 @@ header .headerMenu nav .depth01 {
   display: flex;
 }
 header .headerMenu nav .depth01::before {
-  content: "";
+  /* content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -102,7 +102,7 @@ header .headerMenu nav .depth01::before {
   bottom: 0;
   box-sizing: border-box;
   height: 1px;
-  background: #eee;
+  background: #eee; */
 }
 header .headerMenu nav .depth01 > li {}
 header .headerMenu nav .depth01 > li > a {
@@ -122,8 +122,9 @@ header .headerMenu nav .depth01 .depth02 {
 }
 header .headerMenu nav .depth01 .depth02 .inner {}
 header .headerMenu nav .depth01 .depth02 .inner figure {
-  width: 300px;
+  width: 30%;
   background-color: antiquewhite;
+  padding: 5px 0;
 }
 header .headerMenu nav .depth01 .depth02 .inner figcaption {}
 header .headerMenu nav .depth01 .depth02 .inner > ul {
@@ -136,7 +137,7 @@ header .headerMenu nav .depth01 .depth02 .inner > ul  > li {
   display: flex;
 }
 header .headerMenu nav .depth01 .depth02 .inner > ul > li > a {
-  width: 200px;
+  width: 30%;
   display: block;
   /* vertical-align: top; */
   background-color: #EDF5FF;
@@ -314,6 +315,9 @@ footer {
 .footerInfo .top .link li {
   position: relative;
   padding: 0 10px;
+}
+.footerInfo .top .link li:nth-child(1) {
+  padding-left: 0;
 }
 .footerInfo .top .link li~li::before{
   content: '';

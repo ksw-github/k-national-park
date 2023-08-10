@@ -292,6 +292,7 @@ main section {
 .controlWrap {
   background-color: #EDF5FF;
   padding: 40px 0;
+  overflow: hidden;
 }
 .controlWrap h2 {
   font-size: 1.7rem;
@@ -337,8 +338,9 @@ main section {
 }
 .controlWrap .cardWrap .cardList {
   margin: 0 -20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+.controlWrap .cardWrap .cardList .inner {}
 .controlWrap .cardWrap .cardList .card {}
 .controlWrap .cardWrap .cardList .card a {
   width: 165px;

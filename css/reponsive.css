@@ -27,7 +27,6 @@
   
   /* 알림섹션 */
   .notice {
-    margin: 40px 0;
   }
   /* 공원소개 */
   .mapWrap .mapSliderWrap .mapSlider .img img {
@@ -75,10 +74,8 @@
     display: none;
   }
   .mainBnrSearch {
-    border: 1px solid black;
   }
   .mainBnrSearch .searchWrap {
-    border: 1px solid black;
     /* display: none; */
   }
   .rightBnr {
