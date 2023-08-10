@@ -109,6 +109,9 @@ header .headerMenu nav .depth01 > li > a {
   display: block;
   padding: 35px 20px;
 }
+header .headerMenu nav .depth01 > li > a:hover {
+  color: #406DA1;
+}
 /* depth02 */
 header .headerMenu nav .depth01 .depth02 {
   display: none;
@@ -159,6 +162,9 @@ header .headerMenu nav .depth01 .depth02 .depth03 > li {
   width: 25%;
   font-size: 1rem;
   /* border: 1px solid green; */
+}
+header .headerMenu nav .depth01 .depth02 .depth03 > li:hover > a {
+  text-decoration: underline;
 }
 header .headerMenu nav .depth01 .depth02 .depth03 > li > a{
   color: gray;

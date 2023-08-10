@@ -393,11 +393,11 @@ main section {
 .notice {
   display: flex;
   justify-content: space-between;
-  gap: 2%;
+  gap: 1%;
   padding: 40px 0;
 }
 .notice .left {
-  width: 49%
+  width: 49%;
 }
 .notice .left .noticeTap {
   display: flex;
@@ -552,7 +552,6 @@ main section {
 .notice .right .newsList ul li a .img img {
   width: 100%;
 }
-
 
 /* 공원소개 */
 .mapWrap {
