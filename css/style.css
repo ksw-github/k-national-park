@@ -70,11 +70,6 @@ main section {
   margin-top: 181px;
   position: relative;
 }
-.visualWrap .visualSlider {}
-.visualWrap .visualSlider img {
-  /* height: 310px; */
-  width: 100%;
-}
 
 .visualWrap .visualTit {
   position: relative;
@@ -97,6 +92,19 @@ main section {
   font-size: 0.5em;
   font-weight: 300;
   letter-spacing: 0.5em;
+}
+.visualWrap .visualSlider {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.visualWrap .visualSlider li {
+}
+.visualWrap .visualSlider li img {
+  height: 310px;
+  width: 100%;
 }
 
 /* 메인비주얼 컨트롤러 */
@@ -385,10 +393,11 @@ main section {
 .notice {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  gap: 2%;
+  padding: 40px 0;
 }
 .notice .left {
-  width: 590px;
+  width: 49%
 }
 .notice .left .noticeTap {
   display: flex;
@@ -410,7 +419,6 @@ main section {
   padding: 0 10px;
   cursor: pointer;
 }
-
 .notice .noticeTap button.active,
 .notice .newsTap button.active {
   background-color: #406DA1;
@@ -433,7 +441,6 @@ main section {
   transform: translateY(-50%);
   cursor: pointer;
 }
-
 .notice .left .noticeList {}
 .notice .left .noticeList ul {}
 .notice .left .noticeList ul li {
@@ -469,7 +476,7 @@ main section {
 }
 /* 뉴스 */
 .notice .right {
-  width: 590px;
+  width: 49%;
 }
 .notice .right .newsTap {
   position: relative;
@@ -910,6 +917,7 @@ main section {
   background-attachment: fixed;
 }
 .banner .img img {
+  width: 100%;
   display: inline-block;
   justify-content: center;
 }

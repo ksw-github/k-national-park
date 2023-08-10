@@ -297,7 +297,7 @@ footer {
 /* 푸터 인포 */
 .footerInfo {
   background-color: #EDF5FF;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 .footerInfo .top {}
 .footerInfo .top .link{
