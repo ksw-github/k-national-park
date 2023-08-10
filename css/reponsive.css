@@ -28,10 +28,17 @@
   .notice {
     margin: 40px 0;
   }
+  /* 공원소개 */
+  .mapWrap .mapSliderWrap .mapSlider .img img {
+  }
 
   /* sns섹션 */
   .snsWrap {
     padding: 40px 0;
+  }
+
+  /* 배너섹션 */
+  .backImg {
   }
 
   /* 푸터 */

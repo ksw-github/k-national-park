@@ -151,6 +151,7 @@ header .headerMenu nav .depth01 .depth02 .depth03 {
   /* border: 1px solid red; */
   color: #94BEEE;
   border-bottom: 1px solid #eee;
+  box-sizing: border-box;
   font-size: 0;
 }
 header .headerMenu nav .depth01 .depth02 .depth03 > li {

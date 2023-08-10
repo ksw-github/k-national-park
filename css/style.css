@@ -554,7 +554,7 @@ main section {
 }
 
 
-/* 메인지도 */
+/* 공원소개 */
 .mapWrap {
   background-color: #EDF5FF;
   padding: 40px 0;
@@ -622,7 +622,7 @@ main section {
 .mapWrap .mapBtn .nextBtn::after {
   content: '\f054';
 }
-/* 왼쪽 텍스트인포 */
+/* 슬라이더 왼쪽 텍스트인포 */
 .mapWrap .mapSliderWrap {
   height: 350px;
   display: flex;
@@ -736,7 +736,7 @@ main section {
 .mapWrap .mapSliderWrap .txtList .txtInfo span {
   transition-delay: 0.5s;
 } */
-/* 산이미지 슬라이더 */
+/* 슬라이더 오른쪽 이미지*/
 .mapWrap .mapSliderWrap .mapSlider {
   width: 50%;
   overflow: hidden;
@@ -746,7 +746,6 @@ main section {
 .mapWrap .mapSliderWrap .mapSlider .img img {
   width: 100%;
 }
-
 
 /* sns섹션 */
 .snsWrap {
