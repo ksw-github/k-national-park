@@ -198,7 +198,6 @@ header .siteMap a::before {
   vertical-align: middle;
 }
 
-
 /* 푸터 배너모음 */
 footer {
   min-width: 1200px;
@@ -312,14 +311,20 @@ footer {
   line-height: 40px;
   display: flex;
 }
+.footerInfo .top .link li {
+  position: relative;
+  padding: 0 10px;
+}
 .footerInfo .top .link li~li::before{
   content: '';
   width: 1px;
   height: 15px;
   display: inline-block;
   background-color: #94BEEE;
-  vertical-align: middle;
-  margin: 5px 15px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 .footerInfo .link li a:hover {
   text-decoration: underline;

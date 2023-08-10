@@ -170,6 +170,7 @@ main section {
 
 /* mainIcoWrap 메인아이콘메뉴 */
 .mainIcoWrap {
+  width: 100%;
 }
 .mainIcoWrap .icoList {
   display: flex;
@@ -178,7 +179,7 @@ main section {
 .mainIcoWrap .icoList li {
   width: 140px;
   text-align: center;
-  margin: 20px 20px;
+  margin: 20px;
 }
 .mainIcoWrap .icoList li:hover {
   color: #6BA0DD;
@@ -338,8 +339,7 @@ main section {
   margin: 0 -20px;
   overflow: hidden;
 }
-.controlWrap .cardWrap .cardList .card {
-}
+.controlWrap .cardWrap .cardList .card {}
 .controlWrap .cardWrap .cardList .card a {
   width: 165px;
   height: 182px;
@@ -390,7 +390,7 @@ main section {
 }
 
 /* 공지 */
-.notice {
+.notice .inner {
   display: flex;
   justify-content: space-between;
   gap: 1%;
