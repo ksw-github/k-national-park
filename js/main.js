@@ -126,8 +126,8 @@ $(".mapSlider").slick({
 });
 // 지도슬라이드 비포체인지
 $(".mapSlider").on("beforeChange", function(e, s, c, n){
-  $(".mapWrap").find(".txtInfo").eq(n).addClass("active");
-  $(".mapWrap").find(".txtInfo").eq(n).siblings().removeClass("active");
+  $(".mapWrap").find(".txtInfo").eq(n).stop().addClass("active");
+  $(".mapWrap").find(".txtInfo").eq(n).stop().siblings().removeClass("active");
 });
 
 //sns슬라이드
