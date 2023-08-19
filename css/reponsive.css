@@ -66,8 +66,6 @@
     width: 49%;
   }
 
-  /* 공원소개 */
-
   /* sns섹션 */
   .snsWrap {
     padding: 40px 20px;
@@ -95,6 +93,9 @@
   }
 
   /* 푸터 */
+  .footerBrnWrap .btnWrap button {
+    /* width: 15px; */
+  }
   .footerInfo {
     padding-bottom: 10px;
   }
@@ -208,24 +209,143 @@
   }
 
   /* 푸터 */
-  .footerBrnWrap .footerSlider {
-    /* width: auto; */
+  .footerBrnWrap .btnWrap button {
+    width: 15px;
+  }
+  .footerLink {
+    /* flex-direction: column; */
+  }
+  .footerLink .inner {
+    flex-direction: column;
+  }
+  .footerLink .linkWrap {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
   }
   .footerLink .linkWrap select {
-    /* width: auto; */
+    flex: 1;
+  }
+  .footerLink .linkWrap select:nth-child(2) {
+    border-right: none;
+  }
+  .footerLink .snsWrap {
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .footerInfo .top .link {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .footerInfo .btm .left {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px ;
+  }
+  .footerInfo .btm {
+    flex-direction: column;
+  }
+  .footerInfo .btm .right {
+    justify-content: center;
   }
 }
 
 /* 모바일 */
-@media (max-width:500px) {
+@media (max-width:480px) {
+  /* 플루팅메뉴 */
+  .floatingMenu {
+    display: none;
+  }
+
+  /* 헤더 */
   header .headerUtil {
     display: none;
   }
+  header .siteMap a span {
+    display: none;
+  }
+
+  /* 아이콘메뉴 */
   .mainIcoWrap .icoList {
     flex-wrap: wrap;
     row-gap: 15px;
   }
   .mainIcoWrap .icoList li {
     width: 33.3333%;
+  }
+
+  /* 비주얼 */
+  .visualWrap {
+    display: flex;
+    align-items: center;
+  }
+  .visualWrap .visualTit {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    line-height: 18px;
+  }
+
+  /* 검색 */
+  .mainBnrSearch .inner {
+    gap: 10px;
+  }
+  .mainBnrSearch .searchWrap {
+    order: -1;
+  }
+  .mainBnrSearch .searchWrap .searchBox input#search {
+    height: 50px;
+  }
+  .mainBnrSearch .searchWrap .papular span {
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  .mainBnrSearch .searchWrap .papular ul li a {
+    white-space: nowrap;
+    font-size: 0.7rem;
+  }
+  .mainBnrSearch .leftBnr,
+  .mainBnrSearch .rightBnr {
+    width: 80%;
+  }
+
+  /* 탐방통제 */
+  .controlWrap {
+  }
+  .controlWrap h2,
+  .controlWrap p {
+    text-align: center;
+  }
+  .controlWrap p {
+    font-size: 0.8rem;
+  }
+  .controlWrap .cardWrap {
+    padding: 0 20px;
+  }
+  .controlWrap .cardWrap .cardList .slick-list {
+    /* padding: 0 -20px; */
+    margin-left: -50px;
+  }
+  .controlWrap .cardWrap .cardList .card {
+    width: 90%;
+  }
+  .controlWrap .cardWrap button {
+    width: 0;
+    height: 0;
+    font-size: 1.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: transparent;
+    color: #333;
+    /* border: 1px solid black; */
+  }
+  .controlWrap .cardWrap button.prevBtn {
+    left: 0;
+  }
+  .controlWrap .cardWrap button.nextBtn {
+    right: 10px;
   }
 }

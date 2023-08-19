@@ -260,11 +260,11 @@ footer {}
 .footerBrnWrap .inner {
   display: flex;
 }
-.footerBrnWrap .btnWrap{
-  width: 15%;
+.footerBrnWrap .btnWrap {
   vertical-align: middle;
   align-items: center;
   display: flex;
+  white-space: nowrap;
 }
 .footerBrnWrap .btnWrap strong {
   font-size: 1rem;
@@ -301,7 +301,10 @@ footer {}
   content: '\f054';
 }
 .footerBrnWrap .footerSlider {
-  width: 85%;
+  width: 84%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 .footerBrnWrap .footerSlider .slick-slide {
   margin: 0 10px;
@@ -324,6 +327,7 @@ footer {}
   outline: none;
   color: #eee;
   border-right: 1px solid #eee;
+  box-sizing: border-box;
   background-color: #2F5077;
 }
 .footerLink .linkWrap select option {
@@ -341,6 +345,9 @@ footer {}
   display: block;
   line-height: 35px;
   margin-left: 15px;
+}
+.footerLink .snsWrap a:nth-child(1) {
+  margin-left: 0;
 }
 .footerLink .snsWrap img {
   width: 100%;
