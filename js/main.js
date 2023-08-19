@@ -76,6 +76,26 @@ $(".controlWrap").find(".cardList").slick({
   arrows: true,
   prevArrow: $(".controlWrap").find(".prevBtn"),
   nextArrow: $(".controlWrap").find(".nextBtn"),
+  responsive: [
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
 });
 
 //알림
@@ -145,6 +165,15 @@ $(".snsSlider").slick({
   arrows: true,
   prevArrow: $(".snsWrap").find(".prevBtn"),
   nextArrow: $(".snsWrap").find(".nextBtn"),
+
+  responsive: [
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ],
 });
 
 $(".snsSlider").on("beforeChange", function(e, s, c, n){
@@ -163,6 +192,21 @@ $(".footerSlider").slick({
   arrows: true,
   prevArrow: $(".footerBrnWrap").find(".prevBtn"),
   nextArrow: $(".footerBrnWrap").find(".nextBtn"),
+
+  responsive: [
+    {
+      breakpoint: 1250,
+      settings: {
+        slidesToShow: 6
+      }
+    },
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+  ],
 });
 //푸터배너 재생정지
 $(".footerBrnWrap").find(".pauseBtn").on("click",function(){

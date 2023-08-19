@@ -6,7 +6,7 @@
 @import url(common.css);
 
 main section {
-  min-width: 1200px;
+  /* min-width: 1200px; */
 }
 
 /* 모달창 */
@@ -67,18 +67,45 @@ main section {
 
 /* main visual */
 .visualWrap {
-  margin-top: 181px;
   position: relative;
+  overflow: hidden;
+  height: 310px;
 }
-
+.visualWrap .visualSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.visualWrap .visualSlider .slick-list {
+  height: 100%;
+}
+.visualWrap .visualSlider .slick-track {
+  height: 100%;
+}
+.visualWrap .visualSlider li {
+  /* width: 100%;
+  height: auto; */
+}
+.visualWrap .visualSlider li.visual01 {
+  background: url("../img/visual_01.jpg") no-repeat center / cover;
+}
+.visualWrap .visualSlider li.visual02 {
+  background: url("../img/visual_02.jpg") no-repeat center / cover;
+}
+.visualWrap .visualSlider li.visual03 {
+  background: url("../img/visual_03.jpg") no-repeat center / cover;
+}
+.visualWrap .visualSlider li img {
+  width: 100%;
+  object-fit: cover;
+}
 .visualWrap .visualTit {
   position: relative;
-  left: 0;
-  top: 150px;
-  margin-top: -100px;
+  padding-top: 100px;
   font-size: 25px;
   color: #fff;
-  z-index: 1;
 }
 .visualWrap .visualTit span {
   font-size: 0.7em;
@@ -93,24 +120,10 @@ main section {
   font-weight: 300;
   letter-spacing: 0.5em;
 }
-.visualWrap .visualSlider {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.visualWrap .visualSlider li {
-}
-.visualWrap .visualSlider li img {
-  height: 310px;
-  width: 100%;
-}
-
 /* 메인비주얼 컨트롤러 */
 .visualWrap .controls {
-  display: flex;
   position: absolute;
+  display: flex;
   left: 50%;
   bottom: 10px;
   transform: translateX(-50%);
@@ -175,11 +188,12 @@ main section {
 .mainIcoWrap .icoList {
   display: flex;
   justify-content: center;
+  white-space: nowrap;
+  padding: 20px 0;
 }
 .mainIcoWrap .icoList li {
   width: 140px;
   text-align: center;
-  margin: 20px;
 }
 .mainIcoWrap .icoList li:hover {
   color: #6BA0DD;
@@ -202,8 +216,13 @@ main section {
   display: flex;
   justify-content: space-between;
 }
-.mainBnrSearch .searchWrap .searchBox {
+.mainBnrSearch .leftBnr {
+  width: 350px;
+}
+.mainBnrSearch .searchWrap {
   width: 440px;
+}
+.mainBnrSearch .searchWrap .searchBox {
   position: relative;
   background: #fff;
   border: 2px solid #B7D6FA;
@@ -292,7 +311,6 @@ main section {
 .controlWrap {
   background-color: #EDF5FF;
   padding: 40px 0;
-  overflow: hidden;
 }
 .controlWrap h2 {
   font-size: 1.7rem;
@@ -337,10 +355,11 @@ main section {
   content: "\f054";
 }
 .controlWrap .cardWrap .cardList {
-  margin: 0 -20px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-.controlWrap .cardWrap .cardList .inner {}
+.controlWrap .cardWrap .cardList .slick-list {
+  margin: 0 -20px;
+}
 .controlWrap .cardWrap .cardList .card {}
 .controlWrap .cardWrap .cardList .card a {
   width: 165px;
@@ -417,7 +436,7 @@ main section {
   display: block;
   height: 40px;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 1.2rem;
   padding: 0 10px;
   cursor: pointer;
 }
@@ -474,7 +493,7 @@ main section {
 }
 .notice .left .noticeList ul li span {
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 300;
 }
 /* 뉴스 */
 .notice .right {
@@ -511,10 +530,10 @@ main section {
 .notice .right .newsList ul {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 1%;
 }
 .notice .right .newsList ul li {
-  width: 290px;
+  width: 49%;
 }
 .notice .right .newsList ul li:hover strong {
   text-decoration: underline;
@@ -547,8 +566,6 @@ main section {
   font-weight: 300;
 }
 .notice .right .newsList ul li a .img {
-  width: 290px;
-  height: 183px;
   overflow: hidden;
 }
 .notice .right .newsList ul li a .img img {
@@ -588,24 +605,17 @@ main section {
   justify-content: center;
   margin: 30px 0;
   position: relative;
+  z-index: 999;
 }
 .mapWrap .mapBtn::after {
   content: '';
-  width: 549px;
+  width: 100%;
   border-bottom: #406DA1 1px dashed;
   box-sizing: border-box;
   position: absolute;
   top: calc(50% - 0.5px);
   left: 0;
-}
-.mapWrap .mapBtn::before {
-  content: '';
-  width: 549px;
-  border-bottom: #406DA1 1px dashed;
-  box-sizing: border-box;
-  position: absolute;
-  top: calc(50% - 0.5px);
-  right: 0;
+  z-index: -1;
 }
 .mapWrap .mapBtn button {
   width: 50px;
@@ -740,12 +750,14 @@ main section {
 /* 슬라이더 오른쪽 이미지*/
 .mapWrap .mapSliderWrap .mapSlider {
   width: 50%;
+  height: 350px;
   overflow: hidden;
 }
 .mapWrap .mapSliderWrap .mapSlider .img {
 }
 .mapWrap .mapSliderWrap .mapSlider .img img {
   width: 100%;
+  height: 100%;
 }
 
 /* sns섹션 */
@@ -834,7 +846,6 @@ main section {
 }
 .snsWrap .right .snsSlider .card {
   width: 182px;
-  height: 255px;
   border: 1px solid #94BEEE;
   border-radius: 10px;
   box-sizing: border-box;
@@ -884,11 +895,13 @@ main section {
 .snsWrap .right .snsSlider .card strong {
   font-size: 0.9rem;
   margin-top: 30px;
+  line-height: 20px;
 }
 .snsWrap .right .snsSlider .card p {
   font-size: 0.7rem;
   font-weight: 400;
   margin-top: 10px;
+  line-height: 15px;
 }
 .snsWrap .right .snsSlider .card span {
   display: inline-block;

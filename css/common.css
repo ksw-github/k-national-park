@@ -29,7 +29,7 @@ select {
 
 /* header top*/
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -250,11 +250,8 @@ header .siteMap a::before {
 }
 
 /* 푸터 배너모음 */
-footer {
-  min-width: 1200px;
-}
+footer {}
 .footerBrnWrap {
-  height: 75px;
   background-color: #fff;
   border-top: 1px solid #eee;
   box-sizing: border-box;
@@ -262,11 +259,9 @@ footer {
 }
 .footerBrnWrap .inner {
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
 }
 .footerBrnWrap .btnWrap{
-  width: 160px;
+  width: 15%;
   vertical-align: middle;
   align-items: center;
   display: flex;
@@ -306,17 +301,17 @@ footer {
   content: '\f054';
 }
 .footerBrnWrap .footerSlider {
-  width: 1000px;
-  margin-right: -13px;
+  width: 85%;
 }
-.footerBrnWrap .footerSlider .slick-slider {
+.footerBrnWrap .footerSlider .slick-slide {
+  margin: 0 10px;
 }
-.footerBrnWrap .footerSlider .slick-slider .img {}
-.footerBrnWrap .footerSlider .slick-slider .img img {}
+.footerBrnWrap .footerSlider .slick-slide img {
+  width: 100%;
+}
 
 /* 누리집 링크 */
 .footerLink {
-  height: 70px;
   background-color: #2F5077;
 }
 .footerLink .inner {
@@ -358,7 +353,6 @@ footer {
 }
 .footerInfo .top {}
 .footerInfo .top .link{
-  height: 40px;
   line-height: 40px;
   display: flex;
 }
