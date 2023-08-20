@@ -120,6 +120,10 @@
 
 /* 태블릿 */
 @media (max-width:990px) {
+  /* 모달창 */
+  .modal {
+    left: 10px;
+  }
   /* 헤더 */
   header .headerMenu nav  {
     display: none;
