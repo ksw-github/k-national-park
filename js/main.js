@@ -206,6 +206,12 @@ $(".footerSlider").slick({
         slidesToShow: 5
       }
     },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3
+      }
+    },
   ],
 });
 //푸터배너 재생정지

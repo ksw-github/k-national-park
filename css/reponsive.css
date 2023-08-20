@@ -112,7 +112,7 @@
   header .headerMenu .logo {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 20px;
     transform: translateY(-50%);
   }
   header .headerMenu .logo h1 a {
@@ -122,7 +122,7 @@
   header .siteMap {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 20px;
   }
   /* 아이콘메뉴 */
   .mainIcoWrap .icoList {
@@ -211,9 +211,6 @@
   /* 푸터 */
   .footerBrnWrap .btnWrap button {
     width: 15px;
-  }
-  .footerLink {
-    /* flex-direction: column; */
   }
   .footerLink .inner {
     flex-direction: column;
@@ -322,14 +319,13 @@
     font-size: 0.8rem;
   }
   .controlWrap .cardWrap {
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
   .controlWrap .cardWrap .cardList .slick-list {
     /* padding: 0 -20px; */
-    margin-left: -50px;
   }
   .controlWrap .cardWrap .cardList .card {
-    width: 90%;
+    /* width: 90%; */
   }
   .controlWrap .cardWrap button {
     width: 0;
@@ -340,12 +336,160 @@
     z-index: 1;
     background: transparent;
     color: #333;
-    /* border: 1px solid black; */
   }
   .controlWrap .cardWrap button.prevBtn {
     left: 0;
   }
   .controlWrap .cardWrap button.nextBtn {
     right: 10px;
+  }
+
+  /* 공지 */
+  .notice .inner {
+    padding: 0;
+    padding: 40px 0;
+  }
+  .notice .left .noticeTap,
+  .notice .right .newsTap {
+    justify-content: left;
+  }
+  .notice .left .noticeTap button,
+  .notice .right .newsTap button {
+    font-size: 0.9rem;
+  }
+
+  /* 공원소개 */
+  .mapWrap .txtDots .customDots {
+    width: 100%;
+  }
+  .mapWrap .txtDots .customDots li {
+    font-size: 1rem;
+  }
+  .mapWrap .mapSliderWrap .txtList {
+    height: 210px;
+    margin-bottom: auto;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo {
+    width: 70%;
+    padding: 30px 40px;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo .img {
+    right: -90px;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo .img img {
+    width: 50%;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo h2 {
+    font-size: 1.5rem;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo .hr {
+    margin: 20px 0;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo p {
+    -webkit-line-clamp: 2;
+    margin-bottom: 10px;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo span {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .mapWrap .mapSliderWrap .mapSlider {
+    width: 100%;
+    height: auto;
+  }
+
+  /* sns섹션 */
+  .snsWrap {
+    flex-wrap: wrap;
+  }
+  .snsWrap .left {
+    width: 100%;
+  }
+  .snsWrap .left h2,
+  .snsWrap .left p {
+    text-align: center;
+  }
+  .snsWrap .left h2 {
+    font-size: 1.4rem;
+  }
+  .snsWrap .left p {
+    font-size: 0.7rem;
+  }
+  .snsWrap .left .ctrl {
+    position: relative;
+  }
+  .snsWrap .left a.link,
+  .snsWrap .left .ctrl .progressBar {
+    display: none;
+  }
+  .snsWrap .left .ctrl .arrows button {
+    width: 0;
+    height: 0;
+    font-size: 1.3rem;
+    background: transparent;
+    color: #333;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+  }
+  .snsWrap .left .ctrl .arrows .prevBtn {}
+  .snsWrap .left .ctrl .arrows .nextBtn {
+    right: 10px;
+  }
+
+  .snsWrap .right {
+    width: 100%;
+  }
+  .snsWrap .right .snsSlider {
+    /* padding: 0 10px; */
+  }
+  .snsWrap .right .snsSlider .card strong,
+  .snsWrap .right .snsSlider .card p {
+    -webkit-line-clamp: 1;
+  }
+
+  /* 배너섹션 */
+  .banner {
+    height: auto;
+    padding: 0;
+  }
+  .banner .img {
+    height: auto;
+  }
+
+  /* 푸터 */
+  .footerLink .inner {
+    /* flex-wrap: nowrap; */
+  }
+  .footerLink .linkWrap {
+    flex-direction: column;
+    border: none;
+  }
+  .footerLink .linkWrap select {
+    width: 100%;
+    flex: none;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .footerInfo .top .link {
+    font-size: 0.9rem;
+    line-height: 25px;
+    align-items: end;
+  }
+  .footerInfo .btm .left {
+    display: block;
+    text-align: center;
+  }
+  .footerInfo .btm .left .logo {
+    padding-bottom: 20px;
+    display: none;
+  }
+  .footerInfo .btm .left .info {
+    margin-left: 0;
+    text-align: left;
+  }
+  .footerInfo .btm .right {
+    display: none;
   }
 }
