@@ -23,6 +23,7 @@
     height: 35px;
     width: 125px;
   }
+
   /* 검색섹션 */
   .mainBnrSearch .inner {
     flex-wrap: wrap;
@@ -50,10 +51,8 @@
   .notice .right .newsTap button {
     font-size: 1rem;
   }
-  .notice .left .noticeList ul li {
-    width: 95%;
-  }
   .notice .left .noticeList ul li a {
+    height: 30px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -62,29 +61,44 @@
   .notice .left .noticeList ul li span {
     white-space: nowrap;
   }
-  .notice .right .newsList ul li {
-    width: 49%;
+  .notice .right .newsList ul li a .img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+  }
+  .notice .right .newsList ul li a .img img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+  }
+
+  /* 공원소개 */
+  .mapWrap .mapSliderWrap .txtList .txtInfo .img {
+    right: -80px;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo .img img {
+    width: 80%;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo span {
+    font-size: 1rem;
   }
 
   /* sns섹션 */
   .snsWrap {
     padding: 40px 20px;
   }
-  .snsWrap .left {
-    padding: 0;
-    align-items: center;
+  .snsWrap .left p{
+    font-weight: 400;
   }
   .snsWrap .left .ctrl {
     flex-direction: column;
     align-items: baseline;
     margin-top: 20px;
     row-gap: 20px;
-  }
-
-  /* 배너섹션 */
-  .banner {
-    height: fit-content;
-    padding: 40px 0;
   }
 
   /* 백그라운드 */
@@ -97,9 +111,13 @@
     /* width: 15px; */
   }
   .footerInfo {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 }
+
+
+
+
 /* 태블릿 */
 @media (max-width:990px) {
   /* 헤더 */
@@ -161,24 +179,7 @@
   .notice .right {
     width: 100%;
   }
-  .notice .right .newsList ul li {
-    width: 50%;
-   
-  }
-  .notice .right .newsList ul li a .img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding-top: 60%;
-    overflow: hidden;
-  }
-  .notice .right .newsList ul li a .img img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:50%;
-    transform: translateY(-50%);
-  }
+
   /* 공원소개 */
   .mapWrap .txtDots .customDots {
     width: 80%;
@@ -204,7 +205,7 @@
   }
 
   /* 플루팅메뉴 */
-  .floatingMenu {
+  .floatingMenu.on {
     display: none;
   }
 

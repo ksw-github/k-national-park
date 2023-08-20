@@ -414,7 +414,7 @@ main section {
 .notice .inner {
   display: flex;
   justify-content: space-between;
-  gap: 1%;
+  gap: 2%;
   padding: 40px 0;
 }
 .notice .left {
@@ -548,7 +548,8 @@ main section {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
   line-height: 28px;
 }
 .notice .right .newsList ul li a p {
@@ -566,6 +567,7 @@ main section {
   font-weight: 300;
 }
 .notice .right .newsList ul li a .img {
+  height: 191px;
   overflow: hidden;
 }
 .notice .right .newsList ul li a .img img {
@@ -763,11 +765,11 @@ main section {
 /* sns섹션 */
 .snsWrap {
   display: flex;
-  padding: 80px 0;
+  padding: 40px 0;
+  align-items: center;
 }
 .snsWrap .left {
   width: 50%;
-  padding: 50px 0;
 }
 .snsWrap .left h2 {
   font-size: 1.7rem;
@@ -922,7 +924,7 @@ main section {
 
 /* 배너섹션 */
 .banner {
-  height: 500px;
+  padding: 40px 0;
 }
 .banner .img {
   height: 300px;

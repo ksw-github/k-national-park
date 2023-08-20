@@ -184,7 +184,7 @@ $(".snsSlider").on("beforeChange", function(e, s, c, n){
 
 //푸터배너슬라이드
 $(".footerSlider").slick({
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 2000,
   speed: 1000,
   slidesToShow: 8,
