@@ -255,6 +255,8 @@
   /* 모달창 */
   .modal {
     width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* 헤더 */
