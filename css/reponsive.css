@@ -120,10 +120,6 @@
 
 /* 태블릿 */
 @media (max-width:990px) {
-  /* 모달창 */
-  .modal {
-    left: 10px;
-  }
   /* 헤더 */
   header .headerMenu nav  {
     display: none;
@@ -256,9 +252,9 @@
 
 /* 모바일 */
 @media (max-width:480px) {
-  /* 플루팅메뉴 */
-  .floatingMenu {
-    display: none;
+  /* 모달창 */
+  .modal {
+    width: 90%;
   }
 
   /* 헤더 */
