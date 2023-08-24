@@ -648,6 +648,7 @@ main section {
 }
 .mapWrap .mapSliderWrap .txtList .txtInfo {
   width: 70%;
+  height: 100%;
   padding: 50px;
   position: absolute;
   opacity: 0;
@@ -751,14 +752,11 @@ main section {
 /* 슬라이더 오른쪽 이미지*/
 .mapWrap .mapSliderWrap .mapSlider {
   width: 50%;
-  height: 350px;
-  overflow: hidden;
 }
 .mapWrap .mapSliderWrap .mapSlider .img {
 }
 .mapWrap .mapSliderWrap .mapSlider .img img {
   width: 100%;
-  height: 100%;
 }
 
 /* sns섹션 */
