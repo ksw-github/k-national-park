@@ -86,6 +86,19 @@
   .mapWrap .mapSliderWrap .txtList .txtInfo span {
     font-size: 1rem;
   }
+  .mapWrap .mapSliderWrap .txtList .txtInfo h2 {
+    font-size: 1.5rem;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo span {
+    font-size: 1rem;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo span::before {
+    font-size: 1.2rem;
+  }
 
   /* sns섹션 */
   .snsWrap {
@@ -198,7 +211,10 @@
     margin-bottom: 40px;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo {
-    width: 85%;
+    width: 80%;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo .img {
+    right: -80px;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo .img img {
     width: 70%;
@@ -377,7 +393,7 @@
     padding: 30px 40px;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo .img {
-    right: -90px;
+    right: -100px;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo .img img {
     width: 50%;

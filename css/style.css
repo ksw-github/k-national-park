@@ -648,7 +648,6 @@ main section {
 }
 .mapWrap .mapSliderWrap .txtList .txtInfo {
   width: 70%;
-  height: 100%;
   padding: 50px;
   position: absolute;
   opacity: 0;
@@ -693,7 +692,7 @@ main section {
   line-height: 25px;
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .mapWrap .mapSliderWrap .txtList .txtInfo span {
   display: block;
