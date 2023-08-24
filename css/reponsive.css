@@ -100,6 +100,9 @@
     margin-top: 20px;
     row-gap: 20px;
   }
+  .snsWrap .left .ctrl .progressBar {
+    width: 80%;
+  }
 
   /* 배너섹션 */
   .banner .img {
@@ -257,7 +260,7 @@
 }
 
 /* 모바일 */
-@media (max-width:480px) {
+@media (max-width:500px) {
   /* 모달창 */
   .modal {
     width: 90%;
@@ -380,18 +383,22 @@
     width: 50%;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo h2 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo .hr {
     margin: 20px 0;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo p {
+    font-size: 0.9rem;
     -webkit-line-clamp: 2;
     margin-bottom: 10px;
   }
   .mapWrap .mapSliderWrap .txtList .txtInfo span {
     font-size: 0.8rem;
     white-space: nowrap;
+  }
+  .mapWrap .mapSliderWrap .txtList .txtInfo span::before {
+    font-size: 1rem;
   }
   .mapWrap .mapSliderWrap .mapSlider {
     width: 100%;
