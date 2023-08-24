@@ -637,7 +637,6 @@ main section {
 }
 /* 슬라이더 왼쪽 텍스트인포 */
 .mapWrap .mapSliderWrap {
-  height: 350px;
   display: flex;
   cursor: pointer;
 }
@@ -805,7 +804,7 @@ main section {
   align-items: center;
 }
 .snsWrap .left .ctrl .progressBar {
-  width: 400px;
+  width: 100%;
   height: 5px;
   background-color: #B7D6FA;
   border-radius: 10px;
@@ -819,7 +818,9 @@ main section {
   position: absolute;
   transition: 0.3s;
 }
-.snsWrap .left .ctrl .arrows {}
+.snsWrap .left .ctrl .arrows {
+  width: 30%;
+}
 .snsWrap .left .ctrl .arrows button {
   width: 45px;
   height: 45px;

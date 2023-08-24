@@ -101,6 +101,11 @@
     row-gap: 20px;
   }
 
+  /* 배너섹션 */
+  .banner .img {
+    height: auto;
+  }
+
   /* 백그라운드 */
   .backImg {
     display: none;
@@ -159,16 +164,12 @@
   /* 알림 */
   .notice .inner {
     flex-wrap: wrap;
-    padding: 40px 20px;
+    padding: 40px 0;
     row-gap: 20px;
   }
   .notice .left .noticeTap,
   .notice .right .newsTap {
     justify-content: center;
-  }
-  .notice .left .noticeTap button,
-  .notice .right .newsTap button {
-    font-size: 1.2rem;
   }
   .notice .left {
     width: 100%;
@@ -202,6 +203,11 @@
   .mapWrap .mapSliderWrap .mapSlider {
     width: 70%;
     margin: 0 auto;
+  }
+
+  /* sns누리망 */
+  .snsWrap .left .ctrl .arrows {
+    width: 100%;
   }
 
   /* 플루팅메뉴 */
@@ -320,15 +326,6 @@
   }
   .controlWrap p {
     font-size: 0.8rem;
-  }
-  .controlWrap .cardWrap {
-    /* padding: 0 20px; */
-  }
-  .controlWrap .cardWrap .cardList .slick-list {
-    /* padding: 0 -20px; */
-  }
-  .controlWrap .cardWrap .cardList .card {
-    /* width: 90%; */
   }
   .controlWrap .cardWrap button {
     width: 0;
