@@ -349,7 +349,6 @@
 
   /* 공지 */
   .notice .inner {
-    padding: 0;
     padding: 40px 0;
   }
   .notice .left .noticeTap,
@@ -359,6 +358,7 @@
   .notice .left .noticeTap button,
   .notice .right .newsTap button {
     font-size: 0.9rem;
+    padding: 0 5px;
   }
 
   /* 공원소개 */
