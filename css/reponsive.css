@@ -159,11 +159,18 @@
     flex-direction: column;
   }
   header .headerMenu nav .depth01 {
+    flex: 1;
     flex-direction: column;
     overflow-y: scroll;
   }
+  header .headerMenu nav .depth01 .depth02 {
+    /* flex-direction: column; */
+  }
+  header .headerMenu nav .depth01 .depth02 .depth03 {
+    /* display: none; */
+  }
   header .headerMenu nav.toggle {
-    left: 0;
+    /* left: 0; */
   }
   header .siteMap {
     display: none;
