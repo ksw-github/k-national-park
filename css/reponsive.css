@@ -142,11 +142,28 @@
 /* 태블릿 */
 @media (max-width:990px) {
   /* 헤더 */
-  header .headerMenu nav  {
+  header .siteMap 
+  header .headerUtil {
     display: none;
-  };
+  }
+  header .headerMenu nav {
+    position: flex;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    background-color: #fff;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+  }
+  header .headerMenu nav .depth01 {
+    flex-direction: column;
+  }
+  header .headerMenu nav.toggle {
+    left: 0;
+  }
   header .siteMap {
-    margin-left: auto;
+    display: none;
   }
   header .headerMenu .logo {
     position: absolute;
@@ -286,9 +303,6 @@
 
   /* 헤더 */
   header .headerUtil {
-    display: none;
-  }
-  header .siteMap a span {
     display: none;
   }
 

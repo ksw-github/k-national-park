@@ -18,6 +18,9 @@ $(".modal").find(".close").on("click", function(){
   $(".modal").hide();
 });
 
+// 모바일메뉴창
+
+
 // 메인비주얼슬라이드
 const visualSlider = $(".visualSlider");
 
