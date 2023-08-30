@@ -271,6 +271,7 @@ footer {}
 }
 .footerBrnWrap .inner {
   display: flex;
+  justify-content: space-between;
 }
 .footerBrnWrap .btnWrap {
   vertical-align: middle;
