@@ -155,16 +155,11 @@
     bottom: 0;
     background-color: #fff;
     transition: .2s;
-    /* display: flex; */
-    /* flex-direction: column; */
   }
   header .headerMenu nav .depth01 {
-    flex: 1;
-    flex-direction: column;
-    overflow-y: scroll;
+    display: none;
   }
   header .headerMenu nav .depth01 .depth02 {
-    /* flex-direction: column; */
   }
   header .headerMenu nav .depth01 .depth02 .depth03 {
     /* display: none; */
@@ -173,7 +168,6 @@
     /* left: 0; */
   }
   header .siteMap {
-    display: none;
   }
   header .headerMenu .logo {
     position: absolute;
